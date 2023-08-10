@@ -1,3 +1,85 @@
 .card {
   border-radius: 20px;
+}
+
+.container {
+  opacity: 0.75;
+}
+
+.roam-wrapper {
+  position: relative;
+}
+
+#roam1 {
+  position: absolute;
+  width: 200px;
+  top: 20%;
+  left: 0;
+  animation: roaming1 60s linear infinite;
+}
+
+#roam2 {
+  position: absolute;
+  width: 200px;
+  top: 100%;
+  right: 0;
+  animation: roaming2 60s linear infinite;
+}
+
+#roam3 {
+  position: absolute;
+  width: 200px;
+  top: 250%;
+  left: 0;
+  animation: roaming3 60s linear infinite;
+}
+
+#roam4 {
+  position: absolute;
+  width: 200px;
+  top: 300%;
+  right: 0;
+  animation: roaming4 60s linear infinite;
+}
+
+@keyframes roaming1 {
+  20% {
+    transform: translate(400%, 100%) rotate(-180deg);
+  }
+  40% {
+    transform: translate(100%, 400%) rotate(-180deg);
+  }
+  60% {
+    transform: translate(500%, 800%) rotate(-180deg);
+  }
+}
+@keyframes roaming2 {
+  20% {
+    transform: translate(-600%, 200%) rotate(-180deg);
+  }
+  40% {
+    transform: translate(-400%, 500%) rotate(-180deg);
+  }
+  60% {
+    transform: translate(-100%, 600%) rotate(-180deg);
+  }
+}
+@keyframes roaming3 {
+  20% {
+    transform: translate(200%, 200%) rotate(-180deg);
+  }
+  40% {
+    transform: translate(100%, -100%) rotate(-180deg);
+  }
+  60% {
+    transform: translate(400%, -500%) rotate(-180deg);
+  }
+}
+@keyframes roaming4 {
+  25% {
+    transform: translate(-100%, 200%) rotate(-180deg);
+  }
+  50% {
+    transform: translate(-200%, -800%) rotate(-180deg);
+  }
 }/*# sourceMappingURL=style.css.map */
