@@ -2,9 +2,6 @@
     position: absolute
     width: 200px
 
-.card
-    border-radius: 20px
-
 .container
     opacity: .75
 
@@ -13,59 +10,51 @@
 
 #roam1
     @include roam-list
-    top: 20%
-    left: 0
-    animation: roaming1 45s linear infinite
+    top: 50%
+    left: 10%
+    animation: roaming1 30s alternate infinite
 
 #roam2
     @include roam-list
     top: 100%
-    right: 0
-    animation: roaming2 45s linear infinite
+    right: 10%
+    animation: roaming2 30s alternate infinite
+
 
 #roam3
     @include roam-list
-    top: 250%
-    left: 0
-    animation: roaming3 45s linear infinite
+    top: 150%
+    left: 10%
+    animation: roaming3 30s alternate infinite
 
 #roam4
     @include roam-list
-    top: 300%
-    right: 0
-    animation: roaming4 45s linear infinite
+    top: 200%
+    right: 10%
+    animation: roaming4 30s alternate infinite
+
 
 
 @keyframes roaming1 
-    20% 
-        transform: translate(400%, 100%) rotate(-180deg)
-    40% 
-        transform: translate(100%, 400%) rotate(-180deg)
-    60%
-        transform: translate(400%, 800%) rotate(-180deg)
+    0% 
+        transform: translate(0, 0) rotate(-360deg)
+    100%
+        transform: translate(0, 200%) rotate(360deg)
 
 @keyframes roaming2 
-    20% 
-        transform: translate(-500%, 200%) rotate(-180deg)
-    40% 
-        transform: translate(-300%, 500%) rotate(-180deg)
-    60%
-        transform: translate(-100%, 600%) rotate(-180deg)
-    
-@keyframes roaming3
-    20% 
-        transform: translate(200%, 200%) rotate(-180deg)
-    40% 
-        transform: translate(100%, -100%) rotate(-180deg)
-    60%
-        transform: translate(300%, -500%) rotate(-180deg)
-    
-@keyframes roaming4
-    20% 
-        transform: translate(-200%, 200%) rotate(-180deg)
-    40% 
-        transform: translate(-100%, -100%) rotate(-180deg)
-    60%
-        transform: translate(-300%, -500%) rotate(-180deg)
+    0% 
+        transform: translate(0, 0) rotate(360deg)
+    100%
+        transform: translate(0, -200%) rotate(-360deg)
 
-    
+@keyframes roaming3 
+    0% 
+        transform: translate(0, 0) rotate(-360deg)
+    100%
+        transform: translate(0, 200%) rotate(360deg)
+
+@keyframes roaming4
+    0% 
+        transform: translate(0, 0) rotate(360deg)
+    100%
+        transform: translate(0, -200%) rotate(-360deg)
