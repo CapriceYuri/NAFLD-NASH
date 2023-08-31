@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASH Result</title>
+    <!-- BS CSS Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- BS JS Stylesheet -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container navbar-dark">
+            <a href="index.html" class="navbar-brand"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-virus" viewBox="0 0 16 16">
+                    <path d="M8 0a1 1 0 0 1 1 1v1.402c0 .511.677.693.933.25l.7-1.214a1 1 0 0 1 1.733 1l-.701 1.214c-.256.443.24.939.683.683l1.214-.701a1 1 0 0 1 1 1.732l-1.214.701c-.443.256-.262.933.25.933H15a1 1 0 1 1 0 2h-1.402c-.512 0-.693.677-.25.933l1.214.701a1 1 0 1 1-1 1.732l-1.214-.7c-.443-.257-.939.24-.683.682l.701 1.214a1 1 0 1 1-1.732 1l-.701-1.214c-.256-.443-.933-.262-.933.25V15a1 1 0 1 1-2 0v-1.402c0-.512-.677-.693-.933-.25l-.701 1.214a1 1 0 0 1-1.732-1l.7-1.214c.257-.443-.24-.939-.682-.683l-1.214.701a1 1 0 1 1-1-1.732l1.214-.701c.443-.256.261-.933-.25-.933H1a1 1 0 1 1 0-2h1.402c.511 0 .693-.677.25-.933l-1.214-.701a1 1 0 1 1 1-1.732l1.214.701c.443.256.939-.24.683-.683l-.701-1.214a1 1 0 0 1 1.732-1l.701 1.214c.256.443.933.261.933-.25V1a1 1 0 0 1 1-1Zm2 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0ZM6 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm1 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm5-3a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+                </svg></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav2">
+                <div class="navbar-toggler-icon"></div>
+            </button>
+            <div class="collapse navbar-collapse" id="nav2">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">HEPION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">RENCOFILSTAT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="article.html" class="nav-link">NASH ARTICLES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="landscape.html" class="nav-link ">NASH LANDSCAPE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="result.html" class="nav-link active">NASH RESULT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CODE DIVISION -->
+    <div class="container my-5 mx-auto px-0 shadow-lg rounded-5 bg-warning">
+        <div class="h4 text-center w-50 mx-auto p-2 m-0">89Bio</div>
+        <div class="text-center w-50 mx-auto p-2 m-0 bg">ETNB-ENLIVEN - Mar 22, 2023</div>
+        <table class="table table-striped table-success">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">ETNB-ENLIVEN</th>
+                    <th scope="col">Placebo (n=61)</th>
+                    <th scope="col">15mg QW (n=14)</th>
+                    <th scope="col">30mg QW QD (n=66)</th>
+                    <th scope="col">44mg Q2W (n=51)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Improvement > 1 Stage Of Fibrosis</td>
+                    <td>7%</td>
+                    <td>22%</td>
+                    <td>26%</td>
+                    <td>27%</td>
+                </tr>
+                <tr>
+                    <td>NASH Resolution</td>
+                    <td>2%</td>
+                    <td>37%</td>
+                    <td>23%</td>
+                    <td>26%</td>
+                </tr>
+                <tr class="table-dark">
+                    <th class="text-center" scope="col" colspan=5>Liver Non-Invasive Tests (NITs) - Biomarkers</th>
+                </tr>
+                <tr class="table-dark">
+                    <th scope="col"></th>
+                    <th scope="col" colspan="2">Placebo (n=61)</th>
+                    <th scope="col">30mg QW QD (n=66)</th>
+                    <th scope="col">44mg Q2W (n=51)</th>
+                </tr>
+                <tr>
+                    <td>Liver Fat Content</td>
+                    <td colspan="2">-14%</td>
+                    <td>-52%</td>
+                    <td>-54%</td>
+                </tr>
+                <tr>
+                    <td>ALT</td>
+                    <td colspan="2">-5%</td>
+                    <td>-42%</td>
+                    <td>-32%</td>
+                </tr>
+                <tr>
+                    <td>Liver Stiffness</td>
+                    <td colspan="2">0.7</td>
+                    <td>-3.0</td>
+                    <td>-2.4</td>
+                </tr>
+                <tr>
+                    <td>ProC3</td>
+                    <td colspan="2">6%</td>
+                    <td>-18%</td>
+                    <td>-17%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="divider my-5 bg-warning-subtle"></div>
+
+    <!-- CODE DIVIDE -->
+    <div class="container my-4 mx-auto px-0 shadow-lg bg-warning rounded-4">
+        <div class="h4 text-center w-50 mx-auto p-2 m-0">Akero Therapeutics</div>
+        <div class="text-center w-50 mx-auto p-2 m-0 bg">AKRO-HARMONY - Sep 13, 2022</div>
+        <table class="table table-striped table-success">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col"></th>
+                    <th scope="col">Placebo (n=41)</th>
+                    <th scope="col">28mg (n=38)</th>
+                    <th scope="col">50mg (n=34)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Improvement > 1 Stage Of Fibrosis</td>
+                    <td>20%</td>
+                    <td>39%</td>
+                    <td>41%</td>
+                </tr>
+                <tr>
+                    <td>NASH Resolution</td>
+                    <td>15%</td>
+                    <td>47%</td>
+                    <td>76%</td>
+                </tr>
+                <tr>
+                    <td>Improvement > 1 Stage Of Fibrosis & NASH Resolution</td>
+                    <td>5%</td>
+                    <td>29%</td>
+                    <td>41%</td>
+                </tr>
+                <tr class="table-dark">
+                    <th class="text-center" scope="col" colspan=4>Liver Fat and Key Markers of Fibrosis and Liver Injury</th>
+                </tr>
+                <tr class="table-dark">
+                    <th scope="col"></th>
+                    <th scope="col">Placebo (n=~41)</th>
+                    <th scope="col">28mg (n=~37)</th>
+                    <th scope="col">50mg (n=~35)</th>
+                </tr>
+                <tr>
+                    <td>HEPATIC Fat Fraction</td>
+                    <td>-6%</td>
+                    <td>-52%</td>
+                    <td>-64%</td>
+                </tr>
+                <tr>
+                    <td>ALT</td>
+                    <td>-4%</td>
+                    <td>-38%</td>
+                    <td>-47%</td>
+                </tr>
+                <tr>
+                    <td>AST</td>
+                    <td>-2%</td>
+                    <td>-39%</td>
+                    <td>-49%</td>
+                </tr>
+                <tr>
+                    <td>ProC3 (ug/L)</td>
+                    <td>0.1</td>
+                    <td>-5.1</td>
+                    <td>-5.2</td>
+                </tr>
+                <tr>
+                    <td>ELF Score</td>
+                    <td>0.1</td>
+                    <td>-0.6</td>
+                    <td>-0.7</td>
+                </tr>
+                <tr>
+                    <td>Liver Stiffness (Fibroscan)</td>
+                    <td>-2%</td>
+                    <td>-39%</td>
+                    <td>-49%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="divider my-5 bg-warning-subtle"></div>
+
+    <!-- CODE DIVISION -->
+    <div class="container my-4 mx-auto px-0 shadow-lg bg-warning rounded-4">
+        <div class="h4 text-center w-50 mx-auto p-2 m-0">Altimmune</div>
+        <div class="text-center w-50 mx-auto p-2 m-0 bg">ALT-P1B - Dec 20, 2022</div>
+        <table class="table table-striped table-success">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">ALT-PHASE 1B</th>
+                    <th scope="col">Placebo (n=18)</th>
+                    <th scope="col">1.2mg (n=14)</th>
+                    <th scope="col">1.8mg (n=13)</th>
+                    <th scope="col">2.4mg (n=11)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Absolute - Liver Fat Reduction</td>
+                    <td>1.6%</td>
+                    <td>11.2%</td>
+                    <td>17%</td>
+                    <td>15.6%</td>
+                </tr>
+                <tr>
+                    <td>Relative - Liver Fat Reduction</td>
+                    <td>14%</td>
+                    <td>56.3%</td>
+                    <td>75.2%</td>
+                    <td>76.4%</td>
+                </tr>
+                <tr>
+                    <td>Proportion of Subjects with 30% Reduction</td>
+                    <td>5.6%</td>
+                    <td>76.9%</td>
+                    <td>92.3%</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>Proportion of Subjects with 50% Reduction</td>
+                    <td>0%</td>
+                    <td>61.5%</td>
+                    <td>84.6%</td>
+                    <td>72.7%</td>
+                </tr>
+                <tr>
+                    <td>ALT (IU/L)</td>
+                    <td>-2.2</td>
+                    <td>-13.3</td>
+                    <td>-13.7</td>
+                    <td>-15.2</td>
+                </tr>
+                <tr>
+                    <td>ALT (IU/L) - Baseline >= 30 IU/L</td>
+                    <td>-3.1</td>
+                    <td>-17</td>
+                    <td>-17.7</td>
+                    <td>-20.6</td>
+                </tr>
+                <tr>
+                    <td>Weight Loss - No Diabetes</td>
+                    <td>1.2%</td>
+                    <td>5.2%</td>
+                    <td>7.2%</td>
+                    <td>5.8%</td>
+                </tr>
+                <tr>
+                    <td>Weight Loss - Diabetes</td>
+                    <td>3.4%</td>
+                    <td>4.3%</td>
+                    <td>5.3%</td>
+                    <td>3.5%</td>
+                </tr>
+                <tr>
+                    <td>Weight Loss - All Subjects</td>
+                    <td>1.4%</td>
+                    <td>5.1%</td>
+                    <td>6.2%</td>
+                    <td>5.2%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="divider my-5 bg-warning-subtle"></div>
+
+    <!-- CODE DIVISON -->
+    <div class="container my-4 mx-auto px-0 shadow-lg bg-warning rounded-4">
+        <div class="h4 text-center w-50 mx-auto p-2 m-0">Hepion Pharmaceuticals</div>
+        <div class="text-center w-50 mx-auto p-2 m-0 bg">HEPA-ALTITUDE - May 22, 2023</div>
+        <table class="table table-success table-striped">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col"></th>
+                    <th scope="col">75mg (n=23)</th>
+                    <th scope="col">150mg (n=21)</th>
+                    <th scope="col">225mg (n=21)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-dark">
+                    <th class="text-center" scope="col" colspan=4>Percent Change from Baseline in Key NASH Biomarkers After Four Months Treatment with Rencofilstat</th>
+                </tr>
+                <tr>
+                    <td>ALT</td>
+                    <td>-3.37%</td>
+                    <td>-13.01%</td>
+                    <td>-21.63%</td>
+                </tr>
+                <tr>
+                    <td>AST</td>
+                    <td>4.54%</td>
+                    <td>-8.64%</td>
+                    <td>4.68% </td>
+                </tr>
+                <tr>
+                    <td>ProC3</td>
+                    <td>-6.47%</td>
+                    <td>-11.12%</td>
+                    <td>-9.58%</td>
+                </tr>
+                <tr>
+                    <td>PIIINP</td>
+                    <td>2.75%</td>
+                    <td>0.47%</td>
+                    <td>5.6%</td>
+                </tr>
+                <tr>
+                    <td>TIMP1</td>
+                    <td>3.76%</td>
+                    <td>30.5%</td>
+                    <td>-3.9%</td>
+                </tr>
+                <tr>
+                    <td>Hyaluronic Acid </td>
+                    <td>11.67%</td>
+                    <td>-13.18%</td>
+                    <td>-10.67%</td>
+                </tr>
+                <tr>
+                    <td>ELF Score</td>
+                    <td>1.03%</td>
+                    <td>3.85%</td>
+                    <td>-2.51%</td>
+                </tr>
+                <tr class="table-dark">
+                    <th class="text-center" scope="col" colspan=4>Percent Change From Baseline in NASH Biomarkers in Subjects with ProC3 37.5 ng/ml</th>
+                </tr>
+                <tr class="table-dark">
+                    <th scope="col"></th>
+                    <th scope="col">75mg (n=10)</th>
+                    <th scope="col">150mg (n=7)</th>
+                    <th scope="col">225mg (n=6)</th>
+                </tr>
+                <tr>
+                    <td>ALT</td>
+                    <td>-13.24%</td>
+                    <td>-32.24%</td>
+                    <td>-37.78%</td>
+                </tr>
+                <tr>
+                    <td>AST</td>
+                    <td>6.73%</td>
+                    <td>-30.72%</td>
+                    <td>-11.34%</td>
+                </tr>
+                <tr>
+                    <td>ProC3</td>
+                    <td>-3.39%</td>
+                    <td>-17.05%</td>
+                    <td>-16.23%</td>
+                </tr>
+                <tr>
+                    <td>PIIINP</td>
+                    <td>-1.22%</td>
+                    <td>-7.36%</td>
+                    <td>-21.48%</td>
+                </tr>
+                <tr>
+                    <td>TIMP1</td>
+                    <td>2.4%</td>
+                    <td>-6.69%</td>
+                    <td>-4.77%</td>
+                </tr>
+                <tr>
+                    <td>Hyaluronic Acid</td>
+                    <td>-4.56%</td>
+                    <td>6.99%</td>
+                    <td>-19.66%</td>
+                </tr>
+                <tr>
+                    <td>ELF Score</td>
+                    <td>-0.95%</td>
+                    <td>-1.64%</td>
+                    <td>-5.31%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="divider my-5 bg-warning-subtle"></div>
+
+    <!-- CODE DIVISON -->
+    <div class="container my-4 mx-auto px-0 shadow-lg bg-warning rounded-4">
+        <div class="h4 text-center w-50 mx-auto p-2 m-0">Intercept Pharmaceuticals</div>
+        <div class="text-center w-50 mx-auto p-2 m-0 bg">NASH Program Terminated</div>
+        <table class="table table-striped table-danger">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">ICPT-REGENERATE</th>
+                    <th scope="col">Placebo (n=311)</th>
+                    <th scope="col">10mg (n=312)</th>
+                    <th scope="col">25mg (n=308)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Improvement > 1 Stage Of Fibrosis</td>
+                    <td>9.6%</td>
+                    <td>14.1%</td>
+                    <td>22.4%</td>
+                </tr>
+                <tr>
+                    <td>NASH Resolution</td>
+                    <td>3.5%</td>
+                    <td>6.1%</td>
+                    <td>6.5%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="divider my-5 bg-warning-subtle"></div>
+    <!-- CODE DIVISON -->
+    <div class="container my-4 mx-auto px-0 shadow-lg bg-warning rounded-4">
+        <div class="h4 text-center w-50 mx-auto p-2 m-0">Inventiva Pharma</div>
+        <div class="text-center w-50 mx-auto p-2 m-0 bg">IVA-NATIVE - Oct 20, 2021</div>
+        <table class="table table-striped table-success">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">IVA-NATIVE</th>
+                    <th scope="col">Placebo (n=81)</th>
+                    <th scope="col">800mg (n=83)</th>
+                    <th scope="col">1200mg (n=83)</th>
+                </tr>
+            </thead>
+            <tr class="table-dark">
+                <th class="text-center" scope="col" colspan=5>Intention to Treat Population (ITT)</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Decrease of >= 2 Points of SAF Score</td>
+                    <td>27%</td>
+                    <td>41%</td>
+                    <td>49%</td>
+                </tr>
+                <tr>
+                    <td>NASH Resolution</td>
+                    <td>19%</td>
+                    <td>33%</td>
+                    <td>45%</td>
+                </tr>
+                <tr>
+                    <td>NASH Resolution in F2/F3</td>
+                    <td>9%</td>
+                    <td>34%</td>
+                    <td>44%</td>
+                </tr>
+                <tr>
+                    <td>Improvement > 1 Stage Of Fibrosis</td>
+                    <td>24%</td>
+                    <td>28%</td>
+                    <td>42%</td>
+                </tr>
+                <tr>
+                    <td>Improvement > 1 Stage Of Fibrosis & NASH Resolution</td>
+                    <td>7%</td>
+                    <td>21%</td>
+                    <td>31%</td>
+                </tr>
+                <tr>
+                    <td>Decrease of >= 2 Points of NAS Score</td>
+                    <td>32%</td>
+                    <td>52%</td>
+                    <td>64%</td>
+                </tr>
+                <tr class="table-dark">
+                    <th class="text-center" scope="col" colspan=5>Per Protocol Population (PP)</th>
+                </tr>
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col"></th>
+                        <th scope="col">Placebo (n=62)</th>
+                        <th scope="col">800mg (n=63)</th>
+                        <th scope="col">1200mg (n=69)</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Decrease of >= 2 Points of SAF Score</td>
+                    <td>34%</td>
+                    <td>51%</td>
+                    <td>55%</td>
+                </tr>
+                <tr>
+                    <td>NASH Resolution</td>
+                    <td>23%</td>
+                    <td>40%</td>
+                    <td>49%</td>
+                </tr>
+                <tr>
+                    <td>NASH Resolution in F2/F3</td>
+                    <td>11%</td>
+                    <td>40%</td>
+                    <td>51%</td>
+                </tr>
+                <tr>
+                    <td>Improvement > 1 Stage Of Fibrosis</td>
+                    <td>29%</td>
+                    <td>32%</td>
+                    <td>46%</td>
+                </tr>
+                <tr>
+                    <td>Improvement > 1 Stage Of Fibrosis & NASH Resolution</td>
+                    <td>10%</td>
+                    <td>24%</td>
+                    <td>33%</td>
+                </tr>
+                <tr>
+                    <td>Decrease of >= 2 Points of NAS Score</td>
+                    <td>40%</td>
+                    <td>62%</td>
+                    <td>71%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="divider my-5 bg-warning-subtle"></div>
+    <!-- CODE DIVISON -->
+    <div class="container my-4 mx-auto px-0 shadow-lg rounded-4 bg-warning">
+        <div class="h4 text-center w-50 mx-auto p-2 m-0">Madrigal Pharmaceuticals</div>
+        <div class="text-center w-50 mx-auto p-2 m-0 bg">MDGL-MAESTRO - Dec 19, 2022</div>
+        <table class="table table-striped table-success">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">MDGL-MAESTRO-NASH</th>
+                    <th scope="col">Placebo (n=318)</th>
+                    <th scope="col">80mg (n=316)</th>
+                    <th scope="col">100mg (n=321)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>NASH Resolution with >= 2 Point Reduction</td>
+                    <td>10%</td>
+                    <td>26%</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>Improvement >= 1 Stage Of Fibrosis</td>
+                    <td>14%</td>
+                    <td>24%</td>
+                    <td>26%</td>
+                </tr>
+                <tr class="table-dark border-bottom-1">
+                    <th class="text-center" scope="col" colspan=4>Key Secondary Endpoint (24 weeks)</th>
+                </tr>
+                <tr>
+                    <td>Low-Density Lipoprotein Cholesterol Lowering (LDL-C)</td>
+                    <td>-1%</td>
+                    <td>-12%</td>
+                    <td>-16%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="divider my-5 bg-warning-subtle"></div>
+    <!-- CODE DIVISON -->
+    <div class="container my-4 mx-auto px-0 shadow-lg rounded-4 bg-warning">
+        <div class="h4 text-center w-50 mx-auto p-2 m-0">NGM Bio</div>
+        <div class="text-center w-50 mx-auto p-2 m-0 bg">NGM-ALPINE - May 24, 2021 </div>
+        <table class="table table-striped table-success">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">NGM-ALPINE 4</th>
+                    <th scope="col" colspan="2">Placebo (n=)</th>
+                    <th scope="col">1mg (n=)</th>
+                    <th scope="col">3mg (n=)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Improvement > 1 Stage Of Fibrosis</td>
+                    <td colspan="2">15%</td>
+                    <td>21%</td>
+                    <td>23%</td>
+
+                </tr>
+                <tr>
+                    <td>ELF Score</td>
+                    <td colspan="2"></td>
+                    <td>-0.1</td>
+                    <td>-0.5</td>
+                </tr>
+                <tr class="table-dark">
+                    <th scope="col">NGM-ALPINE 2/3</th>
+                    <th scope="col">Placebo (n=36)</th>
+                    <th scope="col">0.3mg (n=36)</th>
+                    <th scope="col">1mg (n=34)</th>
+                    <th scope="col">3mg (n=37)</th>
+                </tr>
+                <tr>
+                    <td>Improvement > 1 Stage Of Fibrosis</td>
+                    <td>19%</td>
+                    <td>31%</td>
+                    <td>15%</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>NASH Resolution</td>
+                    <td>6%</td>
+                    <td>11%</td>
+                    <td>18%</td>
+                    <td>22%</td>
+                </tr>
+                <tr>
+                    <td>Improvement > 1 Stage Of Fibrosis & NASH Resolution</td>
+                    <td>3%</td>
+                    <td>11%</td>
+                    <td>9%</td>
+                    <td>14%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="divider my-5 bg-warning-subtle"></div>
+    <!-- CODE DIVISON -->
+    <div class="container my-4 mx-auto px-0 shadow-lg rounded-4 bg-warning">
+        <div class="h4 text-center w-50 mx-auto p-2 m-0">Novo Nordisk</div>
+        <div class="text-center w-50 mx-auto p-2 m-0 bg">NVO-P2 - Jun 29, 2022</div>
+        <table class="table table-striped table-success">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">NVO-PHASE 2</th>
+                    <th scope="col">Placebo (n=24)</th>
+                    <th scope="col">2.4mg (n=47)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Improvement > 1 Stage Of Fibrosis</td>
+                    <td>29.2%</td>
+                    <td>10.6%</td>
+                </tr>
+                <tr>
+                    <td>NASH Resolution</td>
+                    <td>20.8%</td>
+                    <td>34%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="divider my-5 bg-warning-subtle"></div>
+    <!-- CODE DIVISON -->
+    <div class="container my-4 mx-auto px-0 shadow-lg bg-warning rounded-4">
+        <div class="h4 text-center w-50 mx-auto p-2 m-0">Terns Pharmaceuticals</div>
+        <div class="text-center w-50 mx-auto p-2 m-0 bg">TERN-DUET - Aug 8, 2023</div>
+        <table class="table table-striped table-success">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">TERN-DUET</th>
+                    <th scope="col">Placebo (n=21)</th>
+                    <th scope="col">1mg (n=23)</th>
+                    <th scope="col">3mg (n=19)</th>
+                    <th scope="col">6mg (n=22)</th>
+                </tr>
+                <tr>
+                    <td>Mean Baseline - Liver Fat</td>
+                    <td>17%</td>
+                    <td>16.6%</td>
+                    <td>19.5%</td>
+                    <td>17.3%</td>
+                </tr>
+                <tr>
+                    <td>Relative Change from BL</td>
+                    <td>-4%</td>
+                    <td>-15%</td>
+                    <td>-27%</td>
+                    <td>-45%</td>
+                </tr>
+                <tr>
+                    <td>Absolute Change from BL</td>
+                    <td>-1%</td>
+                    <td>-3%</td>
+                    <td>-5%</td>
+                    <td>-8%</td>
+                </tr>
+                <tr>
+                    <td>% Patients achieving >= 30% Relative Reduction.</td>
+                    <td>4%</td>
+                    <td>26%</td>
+                    <td>39%</td>
+                    <td>64%</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="divider my-5 bg-warning-subtle"></div>
+    <!-- CODE DIVISON -->
+    <div class="container my-4 mx-auto px-0 shadow-lg rounded-4 bg-warning">
+        <div class="h4 text-center w-50 mx-auto p-2 m-0">Viking Therapeutics</div>
+        <div class="text-center w-50 mx-auto p-2 m-0 bg">VKTX-VOYAGE - May 16, 2023</div>
+        <table class="table table-striped table-success">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">VKTX-VOYAGE</th>
+                    <th scope="col">1mg QD (n=17)</th>
+                    <th scope="col">2.5mg QD (n=58)</th>
+                    <th scope="col">5mg QOD (n=36)</th>
+                    <th scope="col">10mg QOD (n=56)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mean Relative Change in Liver Fat</td>
+                    <td>-16.6%</td>
+                    <td>-45.3%</td>
+                    <td>-36.8%</td>
+                    <td>-51.7%</td>
+                </tr>
+                <tr>
+                    <td>Median Relative Change in Liver Fat</td>
+                    <td>-37.5%</td>
+                    <td>-48.1%</td>
+                    <td>-42.5%</td>
+                    <td>-55.1%</td>
+                </tr>
+                <tr>
+                    <td>Percentage of Patients >= 30% Reduction in Liver Fat</td>
+                    <td>52.9%</td>
+                    <td>77.6%</td>
+                    <td>66.7%</td>
+                    <td>84.9%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="divider my-5 bg-warning-subtle"></div>
+    <!-- CODE DIVISON -->
+    <footer class="py-3 mt-5 mb-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Hepion</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">CRV431</a></li>
+            <li class="nav-item"><a href="article.html" class="nav-link px-2 text-body-secondary">Article</a></li>
+            <li class="nav-item"><a href="landscape.html" class="nav-link px-2 text-body-secondary">Landscape</a></li>
+            <li class="nav-item"><a href="result.html" class="nav-link px-2 text-body-secondary">Data</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 CapriceYuri</p>
+    </footer>
+</body>
+
+</html>
