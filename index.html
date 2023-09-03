@@ -6,32 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEPA Homepage</title>
     <!-- BS CSS Stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <!-- BS JS Stylesheet -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
-        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
 
 </head>
+
 <body>
     <!-- Navbar section -->
-    <nav class="navbar navbar-expand-md bg-dark">
+    <nav class="navbar navbar-expand-md bg-dark z-3">
         <div class="container navbar-dark">
             <a href="index.html" class="navbar-brand"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-virus" viewBox="0 0 16 16">
-                <path d="M8 0a1 1 0 0 1 1 1v1.402c0 .511.677.693.933.25l.7-1.214a1 1 0 0 1 1.733 1l-.701 1.214c-.256.443.24.939.683.683l1.214-.701a1 1 0 0 1 1 1.732l-1.214.701c-.443.256-.262.933.25.933H15a1 1 0 1 1 0 2h-1.402c-.512 0-.693.677-.25.933l1.214.701a1 1 0 1 1-1 1.732l-1.214-.7c-.443-.257-.939.24-.683.682l.701 1.214a1 1 0 1 1-1.732 1l-.701-1.214c-.256-.443-.933-.262-.933.25V15a1 1 0 1 1-2 0v-1.402c0-.512-.677-.693-.933-.25l-.701 1.214a1 1 0 0 1-1.732-1l.7-1.214c.257-.443-.24-.939-.682-.683l-1.214.701a1 1 0 1 1-1-1.732l1.214-.701c.443-.256.261-.933-.25-.933H1a1 1 0 1 1 0-2h1.402c.511 0 .693-.677.25-.933l-1.214-.701a1 1 0 1 1 1-1.732l1.214.701c.443.256.939-.24.683-.683l-.701-1.214a1 1 0 0 1 1.732-1l.701 1.214c.256.443.933.261.933-.25V1a1 1 0 0 1 1-1Zm2 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0ZM6 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm1 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm5-3a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z"/>
-              </svg></a>
+                    <path d="M8 0a1 1 0 0 1 1 1v1.402c0 .511.677.693.933.25l.7-1.214a1 1 0 0 1 1.733 1l-.701 1.214c-.256.443.24.939.683.683l1.214-.701a1 1 0 0 1 1 1.732l-1.214.701c-.443.256-.262.933.25.933H15a1 1 0 1 1 0 2h-1.402c-.512 0-.693.677-.25.933l1.214.701a1 1 0 1 1-1 1.732l-1.214-.7c-.443-.257-.939.24-.683.682l.701 1.214a1 1 0 1 1-1.732 1l-.701-1.214c-.256-.443-.933-.262-.933.25V15a1 1 0 1 1-2 0v-1.402c0-.512-.677-.693-.933-.25l-.701 1.214a1 1 0 0 1-1.732-1l.7-1.214c.257-.443-.24-.939-.682-.683l-1.214.701a1 1 0 1 1-1-1.732l1.214-.701c.443-.256.261-.933-.25-.933H1a1 1 0 1 1 0-2h1.402c.511 0 .693-.677.25-.933l-1.214-.701a1 1 0 1 1 1-1.732l1.214.701c.443.256.939-.24.683-.683l-.701-1.214a1 1 0 0 1 1.732-1l.701 1.214c.256.443.933.261.933-.25V1a1 1 0 0 1 1-1Zm2 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0ZM6 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm1 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm5-3a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
+                </svg></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav2">
                 <div class="navbar-toggler-icon"></div>
             </button>
             <div class="collapse navbar-collapse" id="nav2">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active">HEPION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">RENCOFILSTAT</a>
+                    <li class="dropdown nav-item">
+                        <button class="btn btn-dark dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            HEPION
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="nav-item">
+                                <a href="index.html" class="dropdown-item active">PRESS RELEASE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="dropdown-item">RENCOFILSTAT</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a href="article.html" class="nav-link">NASH ARTICLES</a>
@@ -54,7 +59,7 @@
         <img src="images/rencofilstat.gif" alt="The molecule Reconfilstat" id="roam3">
         <img src="images/rencofilstat.gif" alt="The molecule Reconfilstat" id="roam4">
     </div>
-    <div class="container">
+    <div class="container mb-4">
         <div class="card text-center">
             <div class="card-header">Latest Press Release</div>
             <div class="card-body">
@@ -63,13 +68,11 @@
                 <p class="card-text">The first planned DSMB meeting, occurred on schedule, and all labs, EKGs, adverse
                     events, and protocol deviations were reviewed, focusing on any potential safety signals from the
                     placebo-controlled trial.</p>
-                <a href="https://www.globenewswire.com/en/news-release/2023/06/15/2688875/0/en/Hepion-Pharmaceuticals-Announces-Passing-of-Key-Safety-Milestone-in-Phase-2b-ASCEND-NASH-Trial-of-Rencofilstat.html"
-                    class="btn btn-primary w-25" target="_blank">Read Full</a>
+                <a href="https://www.globenewswire.com/en/news-release/2023/06/15/2688875/0/en/Hepion-Pharmaceuticals-Announces-Passing-of-Key-Safety-Milestone-in-Phase-2b-ASCEND-NASH-Trial-of-Rencofilstat.html" class="btn btn-primary w-25" target="_blank">Read Full</a>
             </div>
             <div class="card-footer text-body-secondary">June 15, 2023</div>
         </div>
     </div>
-    <br>
 
     <div class="container box">
         <div class="row g-4">
@@ -79,8 +82,7 @@
                         <h5 class="card-title">Positive topline results from P2 ALTITUDE NASH.</h5>
                         <p class="card-text">ALTITUDE trial achieves primary and secondary endpoints, including
                             improvement in liver function and multiple NASH biomarkers.</p>
-                        <a href="https://www.globenewswire.com/en/news-release/2023/05/22/2673221/0/en/Hepion-Pharmaceuticals-Phase-2-ALTITUDE-NASH-Trial-Achieves-Primary-and-Secondary-Endpoints-Including-Improvement-in-Liver-Function-and-Multiple-NASH-Biomarkers.html"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://www.globenewswire.com/en/news-release/2023/05/22/2673221/0/en/Hepion-Pharmaceuticals-Phase-2-ALTITUDE-NASH-Trial-Achieves-Primary-and-Secondary-Endpoints-Including-Improvement-in-Liver-Function-and-Multiple-NASH-Biomarkers.html" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">May 22, 2023</div>
                 </div>
@@ -92,8 +94,7 @@
                         <h5 class="card-title">Updates on Ongoing P2 Clinical Program</h5>
                         <p class="card-text">Reviewing the status and tielines for the ongoing phase 2 NASH studies with
                             its lead drug candidate, Rencofilstat.</p>
-                        <a href="https://www.globenewswire.com/news-release/2023/03/02/2619862/0/en/Hepion-Pharmaceuticals-to-Deliver-Updates-on-Ongoing-Phase-2-NASH-Clinical-Program-with-Rencofilstat-at-6th-Global-NASH-Congress.html"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://www.globenewswire.com/news-release/2023/03/02/2619862/0/en/Hepion-Pharmaceuticals-to-Deliver-Updates-on-Ongoing-Phase-2-NASH-Clinical-Program-with-Rencofilstat-at-6th-Global-NASH-Congress.html" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">March 2, 2023</div>
                 </div>
@@ -105,8 +106,7 @@
                         <h5 class="card-title">Early Enrollment Completion for P2 ALTITUDE NASH</h5>
                         <p class="card-text">Completed enrollment of 60 NASH stage 3 subjects in the Phase 2 ALTITUDE
                             NASH clinical trial.</p>
-                        <a href="https://www.globenewswire.com/news-release/2022/12/05/2567480/0/en/Hepion-Pharmaceuticals-Announces-Early-Completion-of-Enrollment-in-Phase-2-ALTITUDE-NASH-Liver-Function-Trial.html"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://www.globenewswire.com/news-release/2022/12/05/2567480/0/en/Hepion-Pharmaceuticals-Announces-Early-Completion-of-Enrollment-in-Phase-2-ALTITUDE-NASH-Liver-Function-Trial.html" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">December 5, 2022</div>
                 </div>
@@ -118,8 +118,7 @@
                         <h5 class="card-title">Publication of P2A AMBITION Clinical Trial Results</h5>
                         <p class="card-text">Peer-reviewed journal, Hepatology Communications, has published a paper
                             reviewing the results of Hepion's AMBITION clinical trial.</p>
-                        <a href="https://www.globenewswire.com/news-release/2022/10/26/2541739/0/en/Hepion-Pharmaceuticals-Announces-Publication-of-Phase-2a-AMBITION-Clinical-Trial-Results.html"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://www.globenewswire.com/news-release/2022/10/26/2541739/0/en/Hepion-Pharmaceuticals-Announces-Publication-of-Phase-2a-AMBITION-Clinical-Trial-Results.html" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">October 26, 2022</div>
                 </div>
@@ -131,8 +130,7 @@
                         <h5 class="card-title">Publication of Food Effect Study with Rencofilstat</h5>
                         <p class="card-text">Peer-reviewed journal, Clinical Pharmacology, has published the results of
                             a clinical trial examining the food effect with Rencofilstat.</p>
-                        <a href="https://www.globenewswire.com/news-release/2022/10/20/2538860/0/en/Hepion-Pharmaceuticals-Announces-Publication-of-Food-Effect-Study-with-Rencofilstat.html"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://www.globenewswire.com/news-release/2022/10/20/2538860/0/en/Hepion-Pharmaceuticals-Announces-Publication-of-Food-Effect-Study-with-Rencofilstat.html" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">October 20, 2022</div>
                 </div>
@@ -144,8 +142,7 @@
                         <h5 class="card-title">Initiation of Dosing in P2 ALTITUDE NASH</h5>
                         <p class="card-text">It has dosed the first NASH stage 3 patient with Rencofilstat. The trial is
                             being conducted in collaboration with HepQuant.</p>
-                        <a href="https://www.globenewswire.com/news-release/2022/09/12/2513995/0/en/Hepion-Pharmaceuticals-Announces-Initiation-of-Dosing-in-Phase-2-ALTITUDE-NASH-Liver-Function-Trial.html"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://www.globenewswire.com/news-release/2022/09/12/2513995/0/en/Hepion-Pharmaceuticals-Announces-Initiation-of-Dosing-in-Phase-2-ALTITUDE-NASH-Liver-Function-Trial.html" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">September 12, 2022</div>
                 </div>
@@ -157,8 +154,7 @@
                         <h5 class="card-title">Initiation of P2B ASCEND NASH</h5>
                         <p class="card-text">It has screened the first subject in the ASCEND NASH clinical trial. The
                             trial is being conducted at up to 121 sites in 7 countries.</p>
-                        <a href="https://www.globenewswire.com/news-release/2022/08/31/2507575/0/en/Hepion-Pharmaceuticals-Announces-Initiation-of-Phase-2b-ASCEND-NASH-Trial.html"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://www.globenewswire.com/news-release/2022/08/31/2507575/0/en/Hepion-Pharmaceuticals-Announces-Initiation-of-Phase-2b-ASCEND-NASH-Trial.html" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">August 31, 2022</div>
                 </div>
@@ -170,8 +166,7 @@
                         <h5 class="card-title">Receives FDA Orphan Drug Status Designation for Rencofilstat for
                             Treatment of Hepatocellular Carcinoma</h5>
                         <p class="card-text">The U.S. FDA has granted Orphan Drug Designation to Rencofilstat.</p>
-                        <a href="https://www.globenewswire.com/news-release/2022/06/20/2465336/0/en/Hepion-Pharmaceuticals-Receives-FDA-Orphan-Drug-Status-Designation-for-Rencofilstat-for-the-Treatment-of-Hepatocellular-Carcinoma.html"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://www.globenewswire.com/news-release/2022/06/20/2465336/0/en/Hepion-Pharmaceuticals-Receives-FDA-Orphan-Drug-Status-Designation-for-Rencofilstat-for-the-Treatment-of-Hepatocellular-Carcinoma.html" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">June 20, 2022</div>
                 </div>
@@ -183,8 +178,7 @@
                         <h5 class="card-title">Clinical Collaboration with HepQuant in Phase 2B NASH trial</h5>
                         <p class="card-text">It has entered into a clinical collaboration with HepQuant, proprietary
                             investigational technology for evaluating liver function and health.</p>
-                        <a href="https://www.globenewswire.com/news-release/2022/05/03/2434467/0/en/Hepion-Pharmaceuticals-Announces-Clinical-Collaboration-with-HepQuant-in-Phase-2b-NASH-Trial.html"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://www.globenewswire.com/news-release/2022/05/03/2434467/0/en/Hepion-Pharmaceuticals-Announces-Clinical-Collaboration-with-HepQuant-in-Phase-2b-NASH-Trial.html" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">May 3, 2022</div>
                 </div>
@@ -196,8 +190,7 @@
                         <h5 class="card-title">"Rencofilstat" as Nonproprietary Name for CRV431</h5>
                         <p class="card-text">The USAN Council has adopted the nonproprietary name "Rencofilstat" for the
                             company's lead drug candidates, CRV431.</p>
-                        <a href="https://www.globenewswire.com/news-release/2022/01/06/2362840/0/en/Hepion-Pharmaceuticals-Announces-USAN-Selection-of-Rencofilstat-as-Nonproprietary-Name-for-CRV431.html"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://www.globenewswire.com/news-release/2022/01/06/2362840/0/en/Hepion-Pharmaceuticals-Announces-USAN-Selection-of-Rencofilstat-as-Nonproprietary-Name-for-CRV431.html" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">January 6, 2022</div>
                 </div>
@@ -210,8 +203,7 @@
                             Cancer</h5>
                         <p class="card-text">Hepion received FDA authorization of an IND to initiate the study of
                             Rencofilstat for the treatment of NASH.</p>
-                        <a href="https://hepionpharma.com/news/hepion-pharmaceuticals-announces-fda-clearance-of-ind-application-for-crv431-in-the-treatment-of-liver-cancer/"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://hepionpharma.com/news/hepion-pharmaceuticals-announces-fda-clearance-of-ind-application-for-crv431-in-the-treatment-of-liver-cancer/" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">December 21, 2021</div>
                 </div>
@@ -225,8 +217,7 @@
                         <p class="card-text">Hepion has been granted Fast Track designation for, CRV431, for the
                             treatment of NASH
                         <p>
-                            <a href="https://hepionpharma.com/news/hepion-pharmaceuticals-receives-fda-fast-track-designation-for-crv431-for-the-treatment-of-nash/"
-                                target="_blank" class="btn btn-primary w-50">Read Full</a>
+                            <a href="https://hepionpharma.com/news/hepion-pharmaceuticals-receives-fda-fast-track-designation-for-crv431-for-the-treatment-of-nash/" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">November 30, 2021</div>
                 </div>
@@ -237,8 +228,7 @@
                     <div class="card-body">
                         <h5 class="card-title">All Endpoints Met in Drug-Drug Interaction Study with CRV431</h5>
                         <p class="card-text">Annouced results from a DDI study with its lead drug candidate, CRV431.</p>
-                        <a href="https://hepionpharma.com/news/all-endpoints-met-in-hepion-pharmaceuticals-drug-drug-interaction-study-with-crv431/"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://hepionpharma.com/news/all-endpoints-met-in-hepion-pharmaceuticals-drug-drug-interaction-study-with-crv431/" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">September 29, 2021</div>
                 </div>
@@ -249,8 +239,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Positive topline results from P2A AMBITION NASH</h5>
                         <p class="card-text">AMBITION trial acheives all primary endpoints, safety and tolerability.</p>
-                        <a href="https://hepionpharma.com/news/hepion-pharmaceuticals-announces-positive-topline-data-from-phase-2a-ambition-nash-trial-all-primary-endpoints-achieved/"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://hepionpharma.com/news/hepion-pharmaceuticals-announces-positive-topline-data-from-phase-2a-ambition-nash-trial-all-primary-endpoints-achieved/" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">July 13, 2021</div>
                 </div>
@@ -262,8 +251,7 @@
                         <h5 class="card-title">Hepion Pharmaceuticals to be Added to the Russell Microcap Index</h5>
                         <p class="card-text">Annouced that it is set to join the Russell Microcap Index at the
                             conclusion of the 2021 Russell indexes annual reconstitution.</p>
-                        <a href="https://hepionpharma.com/news/hepion-pharmaceuticals-to-be-added-to-the-russell-microcap-index/"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://hepionpharma.com/news/hepion-pharmaceuticals-to-be-added-to-the-russell-microcap-index/" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">June 9, 2021</div>
                 </div>
@@ -275,8 +263,7 @@
                         <h5 class="card-title">Completes Final Patient Recruitment in P2A AMBITION NASH</h5>
                         <p class="card-text">Completed recruitment for its P2A AMBITION clinical trial for the treatment
                             of advanced NASH.</p>
-                        <a href="https://hepionpharma.com/news/hepion-pharmaceuticals-completes-final-patient-recruitment-in-phase-2a-ambition-clinical-trial-of-crv431-for-the-treatment-of-advanced-nash/"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://hepionpharma.com/news/hepion-pharmaceuticals-completes-final-patient-recruitment-in-phase-2a-ambition-clinical-trial-of-crv431-for-the-treatment-of-advanced-nash/" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">May 6, 2021</div>
                 </div>
@@ -288,37 +275,24 @@
                         <h5 class="card-title">Positive results from DIAMOND Mouse Model Nonclinical Study</h5>
                         <p class="card-text">Annouced positive results from an in vivo study of CRV431 in a Diet-Induced
                             Animal Model of Non-Alcoholic Fatty Liver Disease ("DIAMOND').</p>
-                        <a href="https://hepionpharma.com/news/diamond-mouse-model-is-latest-in-a-string-of-nonclinical-studies-confirming-the-antifibrotic-effects-of-hepion-pharmaceuticals-lead-drug-crv431/"
-                            target="_blank" class="btn btn-primary w-50">Read Full</a>
+                        <a href="https://hepionpharma.com/news/diamond-mouse-model-is-latest-in-a-string-of-nonclinical-studies-confirming-the-antifibrotic-effects-of-hepion-pharmaceuticals-lead-drug-crv431/" target="_blank" class="btn btn-primary w-50">Read Full</a>
                     </div>
                     <div class="card-footer">March 23, 2021</div>
                 </div>
             </div>
-
-            <!-- <div class="col-sm-6">
-                <div class="card text text-center">
-                    <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text"></p>
-                        <a href="" target="_blank" class="btn btn-primary w-25">Read Full</a>
-                    </div>
-                    <div class="card-footer"></div>
-                </div>
-            </div> -->
-
         </div>
     </div>
-    <br>
+
     <footer class="py-3 mt-5 mb-3">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Hepion</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">CRV431</a></li>
-          <li class="nav-item"><a href="article.html" class="nav-link px-2 text-body-secondary">Article</a></li>
-          <li class="nav-item"><a href="landscape.html" class="nav-link px-2 text-body-secondary">Landscape</a></li>
-          <li class="nav-item"><a href="result.html" class="nav-link px-2 text-body-secondary">Data</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Hepion</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">CRV431</a></li>
+            <li class="nav-item"><a href="article.html" class="nav-link px-2 text-body-secondary">Article</a></li>
+            <li class="nav-item"><a href="landscape.html" class="nav-link px-2 text-body-secondary">Landscape</a></li>
+            <li class="nav-item"><a href="result.html" class="nav-link px-2 text-body-secondary">Data</a></li>
         </ul>
         <p class="text-center text-body-secondary">© 2023 CapriceYuri</p>
-      </footer>
+    </footer>
 </body>
 
 </html>

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-dark">
+    <nav class="navbar navbar-expand-md bg-dark z-3">
         <div class="container navbar-dark">
             <a href="index.html" class="navbar-brand"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-virus" viewBox="0 0 16 16">
                     <path d="M8 0a1 1 0 0 1 1 1v1.402c0 .511.677.693.933.25l.7-1.214a1 1 0 0 1 1.733 1l-.701 1.214c-.256.443.24.939.683.683l1.214-.701a1 1 0 0 1 1 1.732l-1.214.701c-.443.256-.262.933.25.933H15a1 1 0 1 1 0 2h-1.402c-.512 0-.693.677-.25.933l1.214.701a1 1 0 1 1-1 1.732l-1.214-.7c-.443-.257-.939.24-.683.682l.701 1.214a1 1 0 1 1-1.732 1l-.701-1.214c-.256-.443-.933-.262-.933.25V15a1 1 0 1 1-2 0v-1.402c0-.512-.677-.693-.933-.25l-.701 1.214a1 1 0 0 1-1.732-1l.7-1.214c.257-.443-.24-.939-.682-.683l-1.214.701a1 1 0 1 1-1-1.732l1.214-.701c.443-.256.261-.933-.25-.933H1a1 1 0 1 1 0-2h1.402c.511 0 .693-.677.25-.933l-1.214-.701a1 1 0 1 1 1-1.732l1.214.701c.443.256.939-.24.683-.683l-.701-1.214a1 1 0 0 1 1.732-1l.701 1.214c.256.443.933.261.933-.25V1a1 1 0 0 1 1-1Zm2 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0ZM6 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm1 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm5-3a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" />
@@ -24,11 +24,18 @@
             </button>
             <div class="collapse navbar-collapse" id="nav2">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">HEPION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link active">RENCOFILSTAT</a>
+                    <li class="dropdown nav-item">
+                        <button class="btn btn-dark dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            HEPION
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="nav-item">
+                                <a href="index.html" class="dropdown-item">PRESS RELEASE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="dropdown-item active">RENCOFILSTAT</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a href="article.html" class="nav-link">NASH ARTICLES</a>
@@ -87,7 +94,8 @@
                         damage to the liver.<br><br>
                         Cyclophilin A specifically is found in the cytoplasm of cells and is known to be involved in various biological processes, including protein folding, intracellular trafficking, immune responses, and signal transduction. One of its notable functions is its interaction with the immunosuppressive drug cyclosporine A. This drug binds to cyclophilin A and forms a complex that inhibits the activity of calcineurin, a key enzyme in the immune response. By inhibiting calcineurin, cyclosporine A helps suppress the immune system, making it useful for preventing organ transplant rejection and treating certain autoimmune diseases.
                         <br><br>
-                        Additionally, cyclophilin A has been implicated in various disease processes. It has been associated with inflammatory and immune responses, and its levels have been found to be elevated in certain diseases, including viral infections, cardiovascular diseases, and neurodegenerative disorders. Research is ongoing to better understand the roles of cyclophilin A in health and disease, and it continues to be a topic of interest in both basic science and clinical research.</p>
+                        Additionally, cyclophilin A has been implicated in various disease processes. It has been associated with inflammatory and immune responses, and its levels have been found to be elevated in certain diseases, including viral infections, cardiovascular diseases, and neurodegenerative disorders. Research is ongoing to better understand the roles of cyclophilin A in health and disease, and it continues to be a topic of interest in both basic science and clinical research.
+                    </p>
                 </div>
             </div>
         </div>
@@ -127,16 +135,18 @@
         </div>
     </div>
 
+
+
     <footer class="py-3 mt-5 mb-3">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Hepion</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">CRV431</a></li>
-          <li class="nav-item"><a href="article.html" class="nav-link px-2 text-body-secondary">Article</a></li>
-          <li class="nav-item"><a href="landscape.html" class="nav-link px-2 text-body-secondary">Landscape</a></li>
-          <li class="nav-item"><a href="result.html" class="nav-link px-2 text-body-secondary">Data</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Hepion</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">CRV431</a></li>
+            <li class="nav-item"><a href="article.html" class="nav-link px-2 text-body-secondary">Article</a></li>
+            <li class="nav-item"><a href="landscape.html" class="nav-link px-2 text-body-secondary">Landscape</a></li>
+            <li class="nav-item"><a href="result.html" class="nav-link px-2 text-body-secondary">Data</a></li>
         </ul>
         <p class="text-center text-body-secondary">© 2023 CapriceYuri</p>
-      </footer>
+    </footer>
 </body>
 
 </html>
